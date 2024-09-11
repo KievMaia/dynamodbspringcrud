@@ -1,0 +1,3 @@
+FROM localstack/localstack:latest
+COPY --chown=localstack ./localstack/script.sh /etc/localstack/init/ready.d/script.sh
+RUN chmod u+x /etc/localstack/init/ready.d/script.sh
