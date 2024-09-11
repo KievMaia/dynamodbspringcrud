@@ -37,7 +37,6 @@ public class PlayerController {
     }
 
     @PutMapping("/{username}/games/{gameId}")
-    @GetMapping("/{username}/games/{gameId}")
     public ResponseEntity<Void> updateGame(@PathVariable final String username,
                                            @PathVariable final String gameId,
                                            @RequestBody ScoreDto scoreDto) {
